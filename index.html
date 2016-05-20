@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Teste</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js"></script>
+  <script src="js/application.js"></script>
+</head>
+
+<body ng-app="app">
+  <header>HEADER</header>
+
+  <sidebar>
+    <a ng-href="#/page1" ng-class="{active: page == 'page1'}" ng-click="page = 'page1'">Page 1</a>
+    <a ng-href="#/page2" ng-class="{active: page == 'page2'}" ng-click="page = 'page2'">Page 2</a>
+  </sidebar>
+
+  <div ng-view></div>
+
+  <footer>FOOTER</footer>
+</body>
+</html>
